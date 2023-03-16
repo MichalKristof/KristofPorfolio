@@ -11,8 +11,8 @@
     },
   }"
        class="flex relative flex-col text-center md:text-left xl:flex-row max-w-[2000px] xl:px-10 min-h-screen justify-center xl:space-y-0 mx-auto items-center">
-    <h3 class="absolute top-12 md:top-24 uppercase tracking-[20px] text-gray-500 text-2xl">Skills</h3>
-    <h3 class="absolute top-36 uppercase tracking-[3px] text-gray-500 text-sm">Hover over a skill for currency
+    <h3 class="absolute z-0 top-6 md:top-8 uppercase tracking-[20px] text-gray-500 text-lg md:text-2xl">Skills</h3>
+    <h3 class="absolute z-0 top-16 md:top-20 uppercase tracking-[3px] text-gray-500 text-sm md:text-base">Hover over a skill for currency
       profieciency</h3>
     <div v-motion="{
     initial: {
@@ -26,15 +26,15 @@
         duration: 1500,
       },
     },
-  }" class="grid grid-cols-4 gap-5">
+  }" class="grid grid-cols-3 md:grid-cols-4 gap-3 md:gap-5">
       <div v-for="(item, index) of experiences" :key="index" class="group relative flex cursor-pointer">
         <img
-            class="rounded-full border border-gray-500 object-cover w-24 h-24 md:w-28 md:h-28 xl:w-32 xl:h-32 filter group-hover:grayscale transition duration-500 ease-in-out"
-            src="~/assets/images/laravel.svg" alt="Laravel"/>
+            class="rounded-full border border-gray-600 object-cover w-24 h-24 filter group-hover:grayscale transition duration-500 ease-in-out"
+            :src="item.img" :alt="item.alt"/>
         <div
-            class="absolute opacity-0 group-hover:opacity-80 transition duration-500 ease-in-out group-hover:bg-white w-24 h-24 md:w-28 md:h-28 xl:w-32 xl:h-32 rounded-full z-0">
+            class="absolute opacity-0 group-hover:opacity-70 transition duration-500 ease-in-out group-hover:bg-white w-24 h-24 rounded-full z-0">
           <div class="flex items-center justify-center h-full">
-            <p class="text-3xl font-bold text-black opacity-100">{{  item + "%" }}</p>
+            <p class="text-3xl font-bold text-black opacity-100">{{  item.value + "%" }}</p>
           </div>
         </div>
       </div>
@@ -43,10 +43,33 @@
 </template>
 
 <script setup>
+import html from "~/assets/images/html.png"
+import css from "~/assets/images/css.png"
+import javascript from "~/assets/images/js.png"
+import laravel from "~/assets/images/laravel.svg"
+import yii from "~/assets/images/yii.png"
+import symfony from "~/assets/images/symfony.png"
+import vue from "~/assets/images/vue.png"
+import nuxtjs from "~/assets/images/nuxtjs.png"
+import tailwind from "~/assets/images/tailwind.svg"
+import docker from "~/assets/images/docker.png"
+import sanity from "~/assets/images/sanity.png"
+
+
 import { ref } from 'vue'
 const directionLeft = ref(false);
 const experiences = ref([
-    80, 70, 60, 20, 12, 34, 22, 44, 5, 64, 64, 46, 90, 12
+  {img: html, value: 90, alt: "Html icon"},
+  {img: css, value: 90, alt: "Css icon"},
+  {img: javascript, value: 70, alt: "Javascript icon"},
+  {img: laravel, value: 70, alt: "Laravel icon"},
+  {img: yii, value: 20, alt: "Yii icon"},
+  {img: symfony, value: 40, alt: "Symfony icon"},
+  {img: vue, value: 60, alt: "Vue icon"},
+  {img: nuxtjs, value: 80, alt: "Nuxtjs icon"},
+  {img: tailwind, value: 90, alt: "Tailwind CSS icon"},
+  {img: docker, value: 65, alt: "Docker icon"},
+  {img: sanity, value: 20, alt: "Sanity io icon"},
 ]);
 </script>
 

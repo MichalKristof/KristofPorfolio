@@ -15,12 +15,18 @@
         }
       },
 
-    }" class="flex flex-row items-center">
-<!--      <img src="~/assets/images/linkedin.svg" alt="Linkedin"/>-->
-<!--      <img src="~/assets/images/linkedin.svg" alt="Linkedin"/>-->
-<!--      <img src="~/assets/images/linkedin.svg" alt="Linkedin"/>-->
+    }" class="flex flex-row items-center gap-3">
+      <a href="https://github.com/MichalKristof" target="_blank" class="w-auto items-center bg-cover bg-center hover:scale-110 duration-500">
+        <img class="w-8 h-8 md:w-10 md:h-10" src="~/assets/images/github.svg" alt="Github"/>
+      </a>
+      <a href="https://www.linkedin.com/in/michal-kri%C5%A1tof-74a229204/" target="_blank" class="w-auto items-center bg-cover bg-center hover:scale-110 duration-500">
+        <img class="w-8 h-8 md:w-10 md:h-10" src="~/assets/images/linkedin.svg" alt="Linkedin"/>
+      </a>
+      <a class="w-auto items-center bg-cover bg-center hover:scale-110 duration-500">
+        <img class="w-8 h-8 md:w-10 md:h-10" src="~/assets/images/instagram.svg" alt="Instagram"/>
+      </a>
     </div>
-    <nuxt-link :to="{ hash: '#contact' }" :external="true">
+    <nuxt-link :to="{ hash: '#contact' }" :external="true" class="hover:scale-110 duration-500">
       <div v-motion="{
         initial: {
           x: 500,
@@ -36,7 +42,7 @@
           }
         }
       }" class="flex flex-row items-center text-gray-400 cursor-pointer space-x-2">
-        <EnvelopeIcon class="w-7 h-7"/>
+        <EnvelopeIcon class="w-8 h-8"/>
         <p class="uppercase inline-flex text-sm font-semibold hidden md:inline-flex">
           Get in touch
         </p>
