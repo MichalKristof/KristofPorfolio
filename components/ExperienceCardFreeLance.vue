@@ -19,9 +19,9 @@
     <div class="px-5 md:px-10 py-2 md:py-3">
       <h4 class="text-2xl md:text-3xl font-light">Freelance</h4>
       <p class="font-bold text-lg md:text-xl">Junior back-end dev</p>
-      <p class="uppercase py-2 md:py-3 text-gray-300">1-7-2020 - 25-12-2020</p>
+      <p class="uppercase py-2 md:py-3 text-gray-300">1-7-2021 - 25-12-2021</p>
       <ul class="list-disc space-y-1 md:space-y-2 ml-5 text-lg">
-        <li>HTML, CSS, JS</li>
+        <li>HTML, CSS, Javscript</li>
         <li>Laravel framework</li>
         <li>Git, Git-flow</li>
       </ul>

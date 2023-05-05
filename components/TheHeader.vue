@@ -45,7 +45,7 @@
             duration: 1200,
           }
         }
-      }" class="md:flex hidden flex-row items-center text-gray-400 cursor-pointer space-x-2">
+      }" class="md:flex hidden flex-row items-center text-gray-400 cursor-pointer space-x-2 pr-9">
                 <EnvelopeIcon class="w-8 h-8"/>
                 <p class="uppercase text-sm font-semibold hidden md:inline-flex">
                     Get in touch
@@ -57,25 +57,25 @@
              :class="{'bg-violet-500/70': open, 'bg-transparent': !open}">
             <button
                     @click="open = !open"
-                    class="relative z-50 block h-full p-8 w-20 rounded-full focus:outline-none md:hidden"
+                    class="relative z-50 block h-full px-5 py-9 rounded-full focus:outline-none md:hidden"
             >
                 <span class="sr-only">Open main menu</span>
                 <div
                         class="absolute top-1/2 left-1/2 translate-x-1/2 translate-y-1/2 transform"
                 >
-        <span
-                aria-hidden="true"
-                class="absolute block h-0.5 w-5 transform rounded-xl transition duration-500 ease-in-out"
-                :class="{ 'rotate-45 bg-black': open, ' -translate-y-1.5 bg-violet-500': !open }"
-        ></span>
                     <span
                             aria-hidden="true"
-                            class="absolute block h-0.5 w-5 transform rounded-xl bg-violet-500 transition duration-500 ease-in-out"
-                            :class="{'translate-x-full opacity-0 bg-black': open, 'bg-violet-500': !open}"
+                            class="absolute block h-0.5 w-5 transform rounded-xl transition duration-500 ease-in-out"
+                            :class="{ 'rotate-45 bg-black': open, ' -translate-y-1.5 bg-violet-500': !open }"
                     ></span>
                     <span
                             aria-hidden="true"
-                            class="absolute block h-0.5 w-5 transform rounded-xl bg-violet-500 transition duration-500 ease-in-out"
+                            class="absolute block h-0.5 w-5 transform rounded-xl transition duration-500 ease-in-out"
+                            :class="{'translate-x-full opacity-0': open, 'bg-violet-500': !open}"
+                    ></span>
+                    <span
+                            aria-hidden="true"
+                            class="absolute block h-0.5 w-5 transform rounded-xl transition duration-500 ease-in-out"
                             :class="{ '-rotate-45 bg-black': open, 'translate-y-1.5 bg-violet-500': !open }"
                     ></span>
                 </div>

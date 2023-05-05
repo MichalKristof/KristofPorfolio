@@ -1,6 +1,6 @@
 <template>
   <div class="h-screen relative flex flex-col text-center md:text-left max-w-7xl px-10 justify-center mx-auto items-center">
-    <h3 class="absolute z-0 top-6 md:top-8 uppercase tracking-[20px] text-gray-500 text-lg md:text-2xl">Contact</h3>
+    <h3 class="absolute z-0 top-6 md:top-8 uppercase tracking-[5px] md:tracking-[20px] text-gray-500 text-lg md:text-2xl">Contact</h3>
 
     <div class="flex flex-col space-y-2 md:space-y-10 justify-center">
       <h4 class="text-2xl md:text-4xl font-semibold text-center">I have got just what you need.{{" "}}

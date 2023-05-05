@@ -1,7 +1,7 @@
 <template>
     <div class="h-screen flex relative flex-col text-center md:text-left max-w-7xl px-10 justify-evenly items-center mx-auto gap-3">
-<!--        <h3 class="absolute z-0 top-6 md:top-8 uppercase tracking-[20px] text-gray-500 text-lg md:text-2xl">About</h3>-->
-        <h3 class="w-auto mx-auto items-center flex uppercase tracking-[20px] text-gray-500 text-lg md:text-2xl pt-3">About</h3>
+        <h3 class="absolute z-0 top-6 md:top-8 uppercase tracking-[5px] md:tracking-[20px] text-gray-500 text-lg md:text-2xl">
+            About</h3>
 
         <img v-motion="{
       initial: {
@@ -16,7 +16,7 @@
         }
       },
     }"
-             class="-mb-20 md:mb-0 flex-shrink-0 w-40 h-40 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[400px] xl:h-[500px]"
+             class="-mb-20 md:mb-0 flex-shrink-0 w-40 h-40 rounded-full object-cover md:rounded-lg md:w-auto md:h-[300px] xl:w-[400px] xl:h-[500px]"
              src="~/assets/images/profile_photo.jpeg" alt="Profile photo"/>
         <div class="space-y-5 px-0 md:px-10">
             <h4 v-motion="{
