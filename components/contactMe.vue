@@ -125,6 +125,8 @@ import {ref} from 'vue';
 import {required, email, helpers} from '@vuelidate/validators';
 import {useVuelidate} from '@vuelidate/core';
 
+const runtimeConfig = useRuntimeConfig();
+
 const submitMessage = ref('');
 
 const loading = ref(false);
@@ -174,7 +176,7 @@ const submitForm = async () => {
                 Accept: "application/json",
             },
             body: JSON.stringify({
-                access_key: "3f91b73a-7010-4ed3-a16f-5dcd9f192c65",
+                access_key: runtimeConfig.NUXT_ACCESS_KEY,
                 name: nameField.value,
                 email: emailField.value,
                 subject: subjectField.value,

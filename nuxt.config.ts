@@ -1,8 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-    target: "static",
-
-    ssr: false,
+    nitro: {
+        serveStatic: true,
+    },
 
     app: {
         head: {
@@ -23,4 +23,10 @@ export default defineNuxtConfig({
     css: ["@/assets/css/main.css"],
 
     modules: ["@vueuse/motion/nuxt", "nuxt-icon"],
+
+    runtimeConfig: {
+        public:{
+            NUXT_ACCESS_KEY: process.env.NUXT_ACCESS_KEY,
+        },
+    },
 })

@@ -1,7 +1,6 @@
 <template>
   <div
-      class="bg-[#242424] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-violet-500/50">
-    <TheHeader/>
+      class="text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-violet-500/50">
 
     <section id="hero" class="snap-start">
       <Hero/>
@@ -26,12 +25,7 @@
     <section id="contact" class="snap-start">
       <ContactMe/>
     </section>
-
-    <nuxt-link :to="{ hash: '#hero' }" :external="true">
-      <TheFooter/>
-    </nuxt-link>
   </div>
-
 </template>
 
 <script setup>
