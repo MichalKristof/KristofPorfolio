@@ -20,6 +20,10 @@
                 </div>
             </div>
         </div>
+        <div class="absolute bottom-5 animate-pulse flex felx-wrap items-center gap-1 lg:hidden">
+            <span class="text-sm text-gray-500 font-semibold">Slide to show more</span>
+            <ArrowUpCircleIcon class="h-7 w-7 text-gray-500 rotate-90"/>
+        </div>
         <div class="w-full absolute top-[30%] bg-violet-500/50 left-0 h-[500px] -skew-y-12"/>
     </div>
 </template>
@@ -28,6 +32,8 @@
 import proplusco from "~/assets/images/projects/proplusco.png";
 import maslow from "~/assets/images/projects/maslow.png";
 import kfkservis from "~/assets/images/projects/kfkservis.png";
+import { ArrowUpCircleIcon  } from "@heroicons/vue/24/solid"
+
 
 const projects = [
     {

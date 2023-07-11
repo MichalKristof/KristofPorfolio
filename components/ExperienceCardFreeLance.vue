@@ -1,5 +1,5 @@
 <template>
-  <article class="flex py-2 mb-8 flex-col rounded-2xl items-center w-full md:w-[600px] xl:w-[800px] flex-shrink-0 snap-center bg-[#292929] opacity-40 hover:opacity-100 cursor-pointer duration-500 overflow-hidden">
+  <article class="flex py-2 mb-8 flex-col rounded-2xl items-center w-full md:w-[600px] xl:w-[800px] flex-shrink-0 snap-center bg-[#292929] opacity-100 xl:opacity-40 xl:hover:opacity-100 cursor-pointer duration-500 overflow-hidden">
     <div v-motion="{
       initial: {
         y: -100,
