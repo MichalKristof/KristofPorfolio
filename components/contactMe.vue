@@ -5,7 +5,7 @@
 
         <div class="flex flex-col space-y-2 md:space-y-10 justify-center">
             <h4 class="text-xl md:text-4xl font-semibold text-center">I have got just what you need.{{ " " }}
-                <p class="underline decoration-violet-500/50">Let's talk</p>
+                <span class="underline decoration-violet-500/50">Let's talk</span>
             </h4>
             <div class="flex flex-col space-y-2 md:space-y-4 py-3 md:pb-0">
                 <a href="tel:+421902617794"
@@ -117,6 +117,7 @@
             </form>
         </div>
     </div>
+
 </template>
 
 <script setup>

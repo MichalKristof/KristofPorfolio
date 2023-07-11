@@ -1,6 +1,6 @@
 <template>
   <div
-      class="text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-violet-500/50">
+      class="text-white">
 
     <section id="hero" class="snap-start">
       <Hero/>

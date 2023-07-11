@@ -1,5 +1,5 @@
 <template>
-    <header class="sticky top-0 flex items-center justify-between pr-4 md:pr-0 md:px-10 md:py-5 max-w-7xl mx-auto z-20 xl:items-center">
+    <header class="fixed top-0 w-full flex items-center justify-between pr-4 md:pr-0 md:px-10 md:py-5 z-20 xl:items-center">
         <div v-motion="{
       initial: {
         x: -500,
