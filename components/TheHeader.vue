@@ -24,11 +24,6 @@
                class="w-auto items-center bg-cover bg-center hover:scale-110 duration-500">
                 <img class="w-10 h-10" src="~/assets/images/linkedin.svg" alt="Linkedin"/>
             </a>
-            <a href="https://www.instagram.com/michalides12" target="_blank"
-               class="w-auto items-center bg-cover bg-center hover:scale-110 duration-500">
-                <img class="w-10 h-10" src="~/assets/images/instagram.svg"
-                     alt="Instagram"/>
-            </a>
         </div>
         <nuxt-link :to="{ hash: '#contact' }" :external="true" class="hover:scale-110 duration-500">
             <div v-motion="{
